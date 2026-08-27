@@ -1,9 +1,9 @@
 import { Resend } from 'resend';
+import { getEnvVar } from '../../../config/get-env-var';
 
-const apiKey = process.env.RESEND_API_KEY;
-
-if (!apiKey) {
-  throw new Error('RESEND_API_KEY is not configured.');
-}
+const apiKey = getEnvVar(
+  process.env.RESEND_API_KEY,
+  'RESEND_API_KEY',
+);
 
 export const resendClient = new Resend(apiKey);
