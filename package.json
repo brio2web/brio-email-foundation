@@ -1,0 +1,16 @@
+{
+  "name": "brio-email-foundation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reusable email system for BrioWeb client websites",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "resend": "^6.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
