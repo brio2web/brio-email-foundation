@@ -3,10 +3,10 @@ import { render } from '@react-email/components';
 import type {
   SendEmailInput,
   SendEmailResult,
-} from '../../types/email';
+} from '../../types/email.js';
 
-import { WelcomeEmail } from '../../templates/welcome';
-import { resendClient } from './resend-client';
+import { WelcomeEmail } from '../../templates/welcome.js';
+import { resendClient } from './resend-client.js';
 
 export async function sendWithResend(
   input: SendEmailInput,

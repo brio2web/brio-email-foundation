@@ -1,6 +1,6 @@
 import 'dotenv/config';
 
-import { sendEmail } from '../src/index';
+import { sendEmail } from '../src/index.js';
 
 const result = await sendEmail({
   to: 'brio2web@gmail.com',
@@ -8,6 +8,7 @@ const result = await sendEmail({
   template: 'welcome',
   data: {
     name: 'Brandon',
+    
   },
 });
 

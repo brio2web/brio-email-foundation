@@ -1,9 +1,9 @@
 import type {
   SendEmailInput,
   SendEmailResult,
-} from '../types/email';
+} from '../types/email.js';
 
-import { sendWithResend } from '../providers/resend/resend-adapter';
+import { sendWithResend } from '../providers/resend/resend-adapter.js';
 
 export async function sendEmail(
   input: SendEmailInput,

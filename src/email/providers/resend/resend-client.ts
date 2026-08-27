@@ -1,5 +1,5 @@
 import { Resend } from 'resend';
-import { getEnvVar } from '../../../config/get-env-var';
+import { getEnvVar } from '../../../config/get-env-var.js';
 
 const apiKey = getEnvVar(
   process.env.RESEND_API_KEY,
